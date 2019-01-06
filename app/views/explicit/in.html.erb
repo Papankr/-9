@@ -1,0 +1,18 @@
+<h2>Lab9 ajax</h2>
+
+<div id="explicit__container">
+  <%= form_with id: 'explicit__form', method: :get, url: explicit_ajax_path do |form| %>
+    <%= form.text_field :string, placeholder: 'Enter number' %>
+    <%= form.submit 'Run', id:'formSubmit'%>
+  <% end %>
+
+   <br><hr>
+
+  <div id="ajax_result">
+    <div class="col-8">
+    <table class="table thead-light" id="result_table" ></table>
+      <div id="quant"></div>
+  </div>
+  </div>
+
+</div>
